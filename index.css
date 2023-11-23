@@ -1,0 +1,176 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+body{
+    font-family: 'Cinzel', serif;
+    background-color: #312e81;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#title{
+    font-size: 2rem;
+    color: white;
+}
+#container {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    border: 0.5rem #6366f1 solid;
+    background-color: #a5b4fc;
+    border-radius: 1.75rem;
+    margin: 0.5rem;
+    width: 100%;
+}
+#form{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 0.5rem #6366f1 solid;
+    background-color: #a5b4fc;
+    border-radius: 1.75rem;
+    margin: 0.5rem;
+}
+.form-input-container{
+width:90%;
+height: 5rem;
+display: flex;
+justify-content: center;
+padding-top: 2.5rem;
+flex-direction: column;
+font-size: 1.8vh;
+}
+.form-input{
+align-items: center;
+font-size: 12pt;
+outline: transparent;
+}
+
+#form-btn{
+height: 2rem;
+width: 9rem;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 9pt;
+border-radius: 1rem;
+}
+.form-imput:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+.form-info{
+    display: none;
+    justify-content: left;
+    color: red;
+    font-size: 1.3vh;
+    }
+
+.delete-btn{
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    background-color: transparent;
+    border: none;
+    color: #312e81;
+}
+.delete-btn:hover{
+    color: red;
+}
+
+.edit-btn{
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    background-color: transparent;
+    color: #312e81;
+}
+.edit-btn:hover{
+    color: rgb(20, 255, 20)
+}
+.edit-name{
+    outline: none;
+    border: 2px solid blue;
+}
+.edit-number{
+    outline: none;
+    border: 2px solid blue;
+}
+.show {
+    display: block;
+}
+#list{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 0.5rem #6366f1 solid;
+    background-color: #a5b4fc;
+    border-radius: 1.75rem;
+    margin: 0.5rem;
+    list-style: none;
+    overflow-y: auto;
+    height: 18rem;
+    width: 80%;
+}
+.div-edit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.prueba{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.edit-name{
+    font-size: 1rem;
+    padding: 0;
+}
+.edit-number{
+    font-size: 1rem;
+    padding: 0;
+}
+.item{
+    background-color:#f7f7f7;
+
+}
+.correct:focus, .correct{
+    border: 2px solid rgb(3, 255, 3);
+}
+
+.invalid:focus, .invalid{
+    border: 2px solid red;
+}
+@media (min-width: 768px) {
+    .edit-name{
+    font-size: 1.25rem;
+    }
+    .edit-number{
+    font-size: 1.25rem;
+    }
+    .div-edit{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+.input-edit{
+    flex-direction: row;
+}
+.prueba{
+    flex-direction: row;
+}
+}

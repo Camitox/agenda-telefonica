@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="title">Agenda de contactos</div>
+  <form id="form">
+    <div class="form-input-container">
+      <label for="form-input-name">Nombre y Apellido: </label>
+      <input type="text" class="form-input" autocomplete="off"  id="form-input-name" placeholder="Simon Bolivar">
+      <p class="form-info">
+        Solo puede colocar un nombre y un apellido. <br>
+        Tanto el nombre como el apellido tienen que comenzar con una letra mayuscula. <br>
+        No puede tener numeros ni caracteres especiales
+      </p>
+    </div>
+
+    <div class="form-input-container">
+      <label for="form-input-number">Numero: </label>
+      <input type="text" class="form-input" autocomplete="off" id="form-input-number" placeholder="04125554848">
+      <p class="form-info">Tiene que ser un numero venezolano valido.</p>
+    </div>
+
+    <button id="form-btn" disabled>Agendar</button>
+  </form>
+  <ul id="list"></ul>
+  <script src="eventos.js"></script>
+</body>
+</html>
